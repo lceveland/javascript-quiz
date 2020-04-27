@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>WRA410 Quiz</title>
+<link href ="style.css" rel ="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<script src = "main.js"></script>
+
+</head>
+
+
+<body>
+<h1>WRA 410 Quiz</h1>
+
+
+<form id = "quiz" name = "quiz">
+
+
+<p class = "questions">#1 What is the code you would write to change the background color to blue? (don't forget the semicolon)</p>
+<input id = "textbox" type = "text" name = "question1">
+
+<p class = "questions">#2 Every homepage must have this specific file name:</p>
+<input id = "textbox" type = "text" name = "question2">
+
+<p class = "questions">#3 What code would I type to create a new directory named 'instructions' in linux?</p>
+<input id = "textbox" type = "text" name = "question3">
+
+<p class = "questions">#4 In Ruby, the following is and example of a what: [12, "open", nil] ?</p>
+<input id = "textbox" type = "text" name = "question4">
+
+<p class = "questions">#5 In the CSS text box code 'padding: 10px 20px 5px 15px; the '20px' refers to which area in relation to the text box?</p>
+<input type = "radio" id = "mc" name = "question5" value = "Left"> Left<br>
+<input type = "radio" id = "mc" name = "question5" value = "Bottom"> Bottom<br>
+<input type = "radio" id = "mc" name = "question5" value = "Top"> Top<br>
+<input type = "radio" id = "mc" name = "question5" value = "Right"> Right<br>
+
+<p class = "questions">#6 The correct CSS code to change border radius to 20 px is:</p>
+<input type = "radio" id = "mc" name = "question6" value = "borderradius: 20px;"> borderradius: 20px;<br>
+<input type = "radio" id = "mc" name = "question6" value = "border-radius: 20px;"> border-radius: 20px;<br>
+<input type = "radio" id = "mc" name = "question6" value = "border radius: 20px;"> border radius: 20px;<br>
+<input type = "radio" id = "mc" name = "question6" value = "border=radius: 20px;"> border=radius: 20px;<br>
+
+<p class = "questions">#7 What command would allow you to jump to a dirctory called 'health' in linux?</p>
+<input type = "radio" id = "mc" name = "question7" value = "ls health"> ls health<br>
+<input type = "radio" id = "mc" name = "question7" value = "jump health"> jump health<br>
+<input type = "radio" id = "mc" name = "question7" value = "go health"> go health<br>
+<input type = "radio" id = "mc" name = "question7" value = "cd health"> cd health<br>
+
+<p class = "questions">#8 What would be the result of the follwing CSS code:
+  .element {
+    height: 25px;
+    width: 25px;
+    background-color: #c3b299;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 80%;
+}</p>
+<input type = "radio" id = "mc" name = "question8" value = "A block shape"> A block shape<br>
+<input type = "radio" id = "mc" name = "question8" value = "A circle shape"> A circle shape<br>
+<input type = "radio" id = "mc" name = "question8" value = "A triangle shape"> A triangle shape<br>
+<input type = "radio" id = "mc" name = "question8" value = "An oval shape"> An oval shape<br>
+
+<p class = "questions">#9 What tag do you use to implement CSS into an HTML file?</p>
+<input type = "radio" id = "mc" name = "question9" value = "element">element<br>
+<input type = "radio" id = "mc" name = "question9" value = "css">css<br>
+<input type = "radio" id = "mc" name = "question9" value = "appearence">appearence<br>
+<input type = "radio" id = "mc" name = "question9" value = "style">style<br>
+
+<p class = "questions">#10 In the acronym CRUD, the "U" stands for:</p>
+<input type = "radio" id = "mc" name = "question10" value = "Update"> Update<br>
+<input type = "radio" id = "mc" name = "question10" value = "Utility"> Utility<br>
+<input type = "radio" id = "mc" name = "question10" value = "United"> United<br>
+<input type = "radio" id = "mc" name = "question10" value = "Unity"> Unity<br>
+
+
+<input id = "button" type = "button" value = "Submit" onclick = "check();">
+
+
+</form>
+
+<div id = "after_submit">
+<p id = "number_correct"></p>
+<p id = "message"></p>
+<img id = "picture">
+</div>
+</html>
+
+</body>
